@@ -1,5 +1,5 @@
 
-#KMP Basic Template
+# KMP Basic Template
 This is a Kotlin Multiplatform project targeting Android, iOS.
 
 * [/androidApp](./androidApp/src) contains Android applications.
