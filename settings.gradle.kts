@@ -1,4 +1,4 @@
-rootProject.name = "kmp-for-mobile-developers-course"
+rootProject.name = "kmp-basic-template"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
