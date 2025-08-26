@@ -17,15 +17,14 @@ kotlin {
         }
     }
 
-    listOf(
-        iosX64(),
-        iosArm64(),
-        iosSimulatorArm64()
-    ).forEach { iosTarget ->
-        iosTarget.binaries.framework {
-            baseName = "Shared"
-            isStatic = true
-        }
+    iosX64()
+    iosArm64()
+    iosSimulatorArm64()
+
+    swiftExport {
+        moduleName = "Shared"
+        // Collapse rule
+        flattenPackage = "com.santimattius.kmp"
     }
 
     sourceSets {
