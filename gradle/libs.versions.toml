@@ -1,6 +1,7 @@
 [versions]
 agp = "9.0.0"
 kotlin = "2.3.0"
+mavenPublish = "0.36.0"
 
 android-compileSdk = "36"
 android-minSdk = "24"
@@ -57,3 +58,5 @@ composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "k
 
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+# https://github.com/vanniktech/gradle-maven-publish-plugin
+mavenPublish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublish" }
