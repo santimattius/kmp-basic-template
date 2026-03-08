@@ -8,13 +8,13 @@ plugins {
 }
 
 kotlin {
-    androidLibrary {
+    android {
         namespace = "com.santimattius.kmp.shared"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
         @OptIn(ExperimentalKotlinGradlePluginApi::class)
         compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_11)
+            jvmTarget.set(JvmTarget.JVM_17)
         }
     }
 
@@ -59,7 +59,7 @@ mavenPublishing {
         developers {
             developer {
                 id.set("santimattius")
-                name.set("Santi Mattius")
+                name.set("Santiago Mattiauda")
                 url.set("https://github.com/santimattius/")
             }
         }
